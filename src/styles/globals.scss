@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./tokens.scss";
+
+* {
+	font-family: var(--font-family);
+	padding: 0;
+	margin: 0;
+	vertical-align: baseline;
+	list-style: none;
+	border: 0
+}
+
+body {
+	background-color: var(--background-color);
+	color: var(--color-font-normal-letter);
+}
+
+.Screen {
+	display: flex;
+	min-height: 80vh;
+}
+
+button {
+	background: transparent;
+}
+
+img {
+	max-width: 100%;
+	width: auto !important;
+	height: auto !important;
+	position: static !important;
+}
+
