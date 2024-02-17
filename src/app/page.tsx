@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex min-h-screen flex-col p-24 relative">
-        <NavigationBar />
+      <NavigationBar />
+      <main className="flex min-h-screen flex-col p-24 pl-48 relative">
         <Introduction />
         <AboutMe />
         <Projects />

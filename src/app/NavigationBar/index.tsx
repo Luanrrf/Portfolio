@@ -1,13 +1,47 @@
 "use client";
-import { navigate } from "./navigate";
 import style from "./navigation.module.scss";
+
+import AboutMeSVG from "./assets/AboutMeSVG";
+import IntroductionSVG from "./assets/IntroductionSVG";
+import ProjectsSVG from "./assets/ProjectsSVG";
+import { navigateTo } from "./navigateTo";
 
 const NavigationBar = () => {
   return (
     <section className={style.navigation}>
-      <div onClick={() => navigate("Introduction")}>This navigates to Introduction.</div>
-      <div onClick={() => navigate("AboutMe")}>This navigates to About Me.</div>
-      <div onClick={() => navigate("Projects")}>This navigates to Projects.</div>
+      <div className={style.navigationLinks}>
+        <div
+          className={style.navigationLink}
+          onClick={() => {
+            navigateTo("Introduction");
+          }}
+          role="none"
+        >
+          <IntroductionSVG color="white" width="40px" height="40px" />
+        </div>
+        <div
+          className={style.navigationLink}
+          onClick={() => {
+            navigateTo("AboutMe");
+          }}
+          role="none"
+        >
+          <AboutMeSVG color="white" width="40px" height="40px" />
+        </div>
+        <div
+          className={style.navigationLink}
+          onClick={() => {
+            navigateTo("Projects");
+          }}
+          role="none"
+        >
+          <ProjectsSVG color="white" width="40px" height="40px" />
+        </div>
+      </div>
+      <div className={style.navigation__bg}>
+        <span className={style.navigation__bg__circle__top} />
+        <span className={style.navigation__bg__circle__bottom} />
+      </div>
     </section>
   );
 };
