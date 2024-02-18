@@ -1,7 +1,7 @@
 .navigation {
     position: absolute;
     z-index: 1;
-    height: 225vh;
+    height: 265vh;
 }
 
 .navigationLinks {
@@ -15,12 +15,11 @@
     display: flex;
     flex-direction: column;
 
-    .navigationLink {
-        &:hover {
-            svg g {
-                fill: var(--color-palette-3);
-                filter: brightness(1.5) drop-shadow(0 0 25px var(--color-palette-3));
-            }
+    .navigationLink:hover,
+    .navigationLink__active {
+        svg g {
+            fill: var(--color-palette-3);
+            filter: brightness(1.5) drop-shadow(0 0 25px var(--color-palette-3));
         }
     }
 }
