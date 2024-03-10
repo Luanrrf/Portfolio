@@ -3,13 +3,30 @@
 @tailwind utilities;
 @import "./tokens.scss";
 
+:root {
+	/* Your default theme */
+	--color-palette-0: #01080E;
+	--color-palette-1: #586A6A;
+	--color-palette-2: #5EEAD4;
+	--color-palette-3: #DBCBD8;
+	--color-palette-4: #FEE1C7;
+}
+
+[data-theme='light'] {
+	--color-palette-0: #F7F7F9;
+	--color-palette-1: #119DA4;
+	--color-palette-2: #484538;
+	--color-palette-3: #05F140;
+	--color-palette-4: #B07156;
+}
+
 * {
 	font-family: var(--font-family);
 	padding: 0;
 	margin: 0;
 	vertical-align: baseline;
 	list-style: none;
-	border: 0
+	border: 0;
 }
 
 body {
@@ -19,8 +36,10 @@ body {
 
 .Screen {
 	display: flex;
-	min-height: 50vh;
-	background: #3f3f3f;
+	min-height: 70vh;
+	border: 1px solid var(--color-palette-2);
+	border-radius: 50px;
+	padding: 40px;
 }
 
 button {
@@ -33,4 +52,3 @@ img {
 	height: auto !important;
 	position: static !important;
 }
-

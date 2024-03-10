@@ -1,0 +1,61 @@
+.themeGroup {
+    --theme-button-size: 26px;
+
+    .themeButton {
+        border-radius: calc(var(--theme-button-size) - 2px);
+        height: var(--theme-button-size);
+        width: 55px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 4px;
+    
+        .ball {
+            height: calc(var(--theme-button-size) - 8px);
+            width: calc(var(--theme-button-size) - 8px);
+            position: absolute;
+            right: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--color-palette-3);
+            border-radius: 50%;
+            transition: all 0.3s linear;
+        }
+    
+        &:hover {
+            cursor: pointer;
+            filter: brightness(1.5) drop-shadow(0 0 10px var(--color-palette-2));
+        }
+
+        svg g {
+            fill: var(--color-palette-2);
+        }
+    }
+    
+    .dark {
+        background: var(--color-palette-0);
+        border: 1px solid var(--color-palette-2);
+        .sun {
+            opacity: 0;
+        }
+    }
+    
+    .light {
+        background: var(--color-palette-1);
+        border: 1px solid var(--color-palette-2);
+    
+        .ball {
+            background: var(--color-palette-3);
+            transform: translateY(-50%) translateX(calc(-100% - 7px));
+        }
+        .moon {
+            opacity: 0;
+        }
+    
+        &:hover {
+            filter: brightness(1.5) drop-shadow(0 0 10px var(--color-palette-3));
+        }
+    }
+
+}

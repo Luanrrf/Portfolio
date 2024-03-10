@@ -1,8 +1,11 @@
+import style from "./introduction.module.scss";
+
 const Introduction = () => {
   return (
-    <section className="Screen" id="Introduction">
-      This is the part where I will briefly talk about what I do and about my
-      career.
+    <section className={`${style.introduction} Screen`} id="Introduction">
+      <h1 className="text-6xl leading-tight">
+        Olá, <br/>Eu Sou<br/><span className={style.name}>Luan Ribeiro</span>
+      </h1>
     </section>
   );
 };

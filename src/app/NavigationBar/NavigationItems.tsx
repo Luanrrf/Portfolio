@@ -13,24 +13,27 @@ interface INavigationItems {
 
 const NavigationItems = ({ activeLink, setActiveLink }: INavigationItems) => {
 
+  //TODO: Colocar pra variar de acordo com o tema
+  const svgColor = "#fff";
+
   const NAVIGATION_LINKS = [
-    { id: "Introduction", label: "Introduction", icon: IntroductionSVG },
-    { id: "AboutMe", label: "AboutMe", icon: AboutMeSVG },
-    { id: "Projects", label: "Projects", icon: ProjectsSVG },
+    { id: "Introduction", label: "Introduction", Icon: IntroductionSVG },
+    { id: "AboutMe", label: "AboutMe", Icon: AboutMeSVG },
+    { id: "Projects", label: "Projects", Icon: ProjectsSVG },
   ];
 
   return (
     <div className={style.navigationLinks}>
-      {NAVIGATION_LINKS.map((link) => (
+      {NAVIGATION_LINKS.map(({id, Icon}) => (
         <div
-          key={link.id}
+          key={id}
           className={`${style.navigationLink} ${
-            activeLink === link.id && style.navigationLink__active
+            activeLink === id && style.navigationLink__active
           }`}
-          onClick={() => navigateTo(link.id, setActiveLink)}
+          onClick={() => navigateTo(id, setActiveLink)}
           role="none"
         >
-          <link.icon color="white" width="40px" height="40px" />
+          <Icon color={svgColor} width="40px" height="40px" />
         </div>
       ))}
     </div>

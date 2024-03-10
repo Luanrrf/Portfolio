@@ -3,15 +3,13 @@
 // ----------------------------------------------------------
 
 body {
-    --color-font-stacks-tech: var(--color-palette-3);
+    --color-font-stacks-tech: var(--color-palette-2);
     --color-font-normal-letter: var(--color-palette-5);
-    --background-color: var(--color-palette-1);
+    --background-color: var(--color-palette-0);
     --font-family: 'Arial';
 
-    // Palette
-    --color-palette-1: #01080E;
-    --color-palette-2: #586A6A;
-    --color-palette-3: #5EEAD4;
-    --color-palette-4: #DBCBD8;
-    --color-palette-5: #FEE1C7;
+    // viewports
+    --viewport-mobile: 600px;
+    --viewport-desktop: 1024px;
+    --viewport-large-desktop: 1600px;
 }

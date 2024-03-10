@@ -1,5 +1,12 @@
 .mainSection {
-    padding: 25vh 12rem;
+    padding: 20vh 6rem 20vh 12rem;
     max-width: 1400px;
-    gap: 50vh;
+    margin: auto;
+    gap: 35vh;
+}
+
+@media screen and (min-width: 1600px) {
+    .mainSection {
+        padding: 20vh 8rem;
+    }
 }
