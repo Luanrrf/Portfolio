@@ -4,7 +4,7 @@ import { useTheme } from "next-themes";
 import style from "./themeButton.module.scss";
 import DarkThemeSVG from "./assets/DarkThemeSVG";
 import LightThemeSVG from "./assets/LightThemeSVG";
-import "../../../styles/tokens.scss";
+import "../../../../styles/tokens.scss";
 
 const ThemeButton = () => {  
   const { theme, setTheme } = useTheme();
