@@ -1,0 +1,15 @@
+{
+  "Introduction": {
+    "Title": ["Hello,", "I'm "],
+    "Subtitle": "Full Stack Developer",
+    "Description": "Put text here"
+  },
+  "AboutMe": {
+    "Title": "About Me",
+    "Description": "Put text here"
+  },
+  "Projects": {
+    "Title": "Projects",
+    "Description": "Put text here"
+  }
+}

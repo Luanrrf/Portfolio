@@ -1,0 +1,47 @@
+{
+    "pt-BR": {
+        "Introduction": {
+            "Title": ["Olá,", "Eu Sou"],
+            "Subtitle": "Desenvolvedor Full Stack",
+            "Description": "Colocar texto aqui"
+        },
+        "AboutMe": {
+            "Title": "Sobre Mim",
+            "Description": "Colocar texto aqui"
+        },
+        "Projects": {
+            "Title": "Projetos",
+            "Description": "Colocar texto aqui"
+        }
+    },
+    "en-US": {
+        "Introduction": {
+            "Title": ["Hello,", "I'm "],
+            "Subtitle": "Full Stack Developer",
+            "Description": "Put text here"
+        },
+        "AboutMe": {
+            "Title": "About Me",
+            "Description": "Put text here"
+        },
+        "Projects": {
+            "Title": "Projects",
+            "Description": "Put text here"
+        }
+    }, 
+    "es": {
+        "Introduction": {
+            "Title": ["Hola,",  "Soy "],
+            "Subtitle": "Desarrollador Full Stack",
+            "Description": "Colocar texto aquí"
+        },
+        "AboutMe": {
+            "Title": "Sobre Mi",
+            "Description": "Colocar texto aquí"
+        },
+        "Projects": {
+            "Title": "Proyectos",
+            "Description": "Colocar texto aquí"
+        }
+    }
+}

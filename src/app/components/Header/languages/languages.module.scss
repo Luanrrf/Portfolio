@@ -1,0 +1,15 @@
+.languages {
+    display: flex;
+    gap: 8px;
+
+    .language {
+        border: 1px solid transparent;
+        border-radius: 4px;
+        padding: 0 4px;
+    }
+
+    .selected {
+        border: 1px solid var(--color-palette-2);
+        background: var(--color-palette-0);
+    }
+}
