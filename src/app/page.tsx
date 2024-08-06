@@ -1,10 +1,10 @@
 import React from "react";
-import AboutMe from "./AboutMe";
-import Footer from "./Footer";
-import Header from "./Header";
-import Introduction from "./Introduction";
-import NavigationBar from "./NavigationBar";
-import Projects from "./Projects";
+import AboutMe from "./components/AboutMe";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Introduction from "./components/Introduction";
+import NavigationBar from "./components/NavigationBar";
+import Projects from "./components/Projects";
 import style from "./home.module.scss";
 
 export default function Home() {

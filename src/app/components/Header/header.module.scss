@@ -1,0 +1,16 @@
+.header {
+	// background: var(--color-palette-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    padding: 0 4rem;
+}
+
+.header.lightTheme {
+    background: var(--color-palette-2);
+}
