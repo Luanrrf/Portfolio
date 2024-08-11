@@ -1,16 +1,19 @@
 import { LanguageProps } from "./types";
 
-export const AllLanguages: LanguageProps[] = [
+export const allLanguages: LanguageProps[] = [
     {
         urlImage: "/languages/brasil-flag.png",
         label: "Português",
+        acronym: "pt-br"
     },
     {
         urlImage: "/languages/usa-flag.png",
         label: "English",
+        acronym: "en-us"
     },
     {
         urlImage: "/languages/spain-flag.png",
-        label: "Español",
+        label: "Spanish",
+        acronym: "es"
     }
 ]

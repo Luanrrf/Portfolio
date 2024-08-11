@@ -1,5 +1,5 @@
 {
-    "pt-BR": {
+    "pt-br": {
         "Introduction": {
             "Title": ["Olá,", "Eu Sou"],
             "Subtitle": "Desenvolvedor Full Stack",
@@ -14,7 +14,7 @@
             "Description": "Colocar texto aqui"
         }
     },
-    "en-US": {
+    "en-us": {
         "Introduction": {
             "Title": ["Hello,", "I'm "],
             "Subtitle": "Full Stack Developer",

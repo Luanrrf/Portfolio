@@ -1,0 +1,15 @@
+{
+    "Introduction": {
+      "Title": ["Olá,", "Eu Sou"],
+      "Subtitle": "Desenvolvedor Full Stack",
+      "Description": "Primeiramente, seja bem vindo ao meu portfólio pessoal. Sou um desenvolvedor Full Stack sempre em busca de novos desafios e aprendizados. Tenho experiências com diversas tecnologias e linguagens de programação, como React, Next, Node, SCSS, Tailwind, TypeScript, Graphql, Java e Python. Se você deseja saber mais sobre mim ou sobre meus projetos, fique à vontade para explorar o site. Se precisar entrar em contato, estou disponível nos links das redes sociais abaixo. Obrigado pela visita e espero que goste do conteúdo!"
+    },
+    "AboutMe": {
+      "Title": "Sobre Mim",
+      "Description": "Colocar texto aqui"
+    },
+    "Projects": {
+      "Title": "Projetos",
+      "Description": "Colocar texto aqui"
+    }
+}

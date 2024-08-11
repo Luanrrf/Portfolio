@@ -1,17 +1,25 @@
 "use client";
 
 import Image from "next/image";
-import { LanguageProps } from "./types";
-import { AllLanguages } from "./AllLanguages";
 import style from "./languages.module.scss";
-import { useState } from "react";
-import { changeLanguage } from "./changeLanguage";
+import { useContext } from "react";
+import { setCookie } from "cookies-next";
+import { PageContext } from "@/app/context/PageContext";
+import { allLanguages } from "./allLanguages";
+import getMessages from "@/app/utils/getMessages";
 
-const Languages = ({ allLanguages }: { allLanguages?: LanguageProps[] }) => {
-  const [actualLanguage, setActualLanguage] = useState<string>(
-    AllLanguages[0].label
-  );
-  if (!allLanguages) allLanguages = AllLanguages;
+const Languages = () => {
+  const { info, setInfo } = useContext(PageContext);
+
+  async function changeLanguage(acronym: string) {
+    const allMessages = await getMessages(acronym);
+    setInfo({
+      language: acronym,
+      messages: allMessages,
+    });
+    setCookie("lang", acronym);
+    setCookie("messages", JSON.stringify(allMessages));
+  }
 
   return (
     <div className={style.languages}>
@@ -19,9 +27,9 @@ const Languages = ({ allLanguages }: { allLanguages?: LanguageProps[] }) => {
         allLanguages.map((language) => (
           <button
             key={language.label}
-            onClick={() => changeLanguage(language.label, setActualLanguage)}
+            onClick={() => changeLanguage(language.acronym)}
             className={`${style.language} ${
-              language.label === actualLanguage && style.selected
+              language.acronym === info.language ? style.selected : ""
             }`}
           >
             <Image
