@@ -23,7 +23,7 @@ export default function RootLayout({
   
   const cookieStore = cookies();
   const lang = cookieStore.get("lang")?.value ?? "pt-br";
-  const messages = JSON.parse(cookieStore.get("messages")?.value ?? "") ?? {};
+  const messages = cookieStore.get("messages")?.value ? JSON.parse(cookieStore.get("messages")?.value ?? "") : {};
 
   return (
     <html lang="pt-br">
