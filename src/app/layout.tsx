@@ -4,6 +4,7 @@ import "../styles/globals.scss";
 import ThemeProvider from "./components/Header/theme/ThemeProvider";
 import { PageProvider } from "./context/PageContext";
 import { cookies } from "next/headers";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
         <PageProvider lang={lang} messages={messages}>
           <ThemeProvider>{children}</ThemeProvider>
         </PageProvider>
+        <Analytics />
       </body>
     </html>
   );

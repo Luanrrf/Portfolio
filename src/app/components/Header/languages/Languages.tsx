@@ -5,8 +5,8 @@ import style from "./languages.module.scss";
 import { useContext } from "react";
 import { setCookie } from "cookies-next";
 import { PageContext } from "@/app/context/PageContext";
-import { allLanguages } from "./allLanguages";
 import getMessages from "@/app/utils/getMessages";
+import { pageLanguages } from "./pageLanguages";
 
 const Languages = () => {
   const { info, setInfo } = useContext(PageContext);
@@ -23,8 +23,8 @@ const Languages = () => {
 
   return (
     <div className={style.languages}>
-      {allLanguages &&
-        allLanguages.map((language) => (
+      {pageLanguages &&
+        pageLanguages.map((language) => (
           <button
             key={language.label}
             onClick={() => changeLanguage(language.acronym)}
