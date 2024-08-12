@@ -8,6 +8,8 @@ Telas:
 
 Carregamento bonitin
 Popup de linguagens
+
+
 Lista de lojas que já trabalhei:
 BR: 
 Thomson BR
@@ -37,15 +39,7 @@ Copservir
 Prismamoda
 
 
-
-
-
-
-
 Header
-Idiomas diferentes https://nextjs.org/docs/app/building-your-application/routing/internationalization
-
-
 Escolher melhor as cores do lightmode
 
 
@@ -67,3 +61,4 @@ Barra de navegação - Seções ao lado (para clicar e rolar)
 Rolagem smooth
 Selecionar cores a serem utilizadas
 Dark e light mode (next-themes)
+Idiomas diferentes https://nextjs.org/docs/app/building-your-application/routing/internationalization
