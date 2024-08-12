@@ -5,6 +5,8 @@ import ThemeProvider from "./components/Header/theme/ThemeProvider";
 import { PageProvider } from "./context/PageContext";
 import { cookies } from "next/headers";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +32,7 @@ export default function RootLayout({
           <ThemeProvider>{children}</ThemeProvider>
         </PageProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
