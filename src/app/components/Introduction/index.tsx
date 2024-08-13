@@ -9,7 +9,7 @@ const Introduction = () => {
 
   const introductionTexts = info?.messages?.["Introduction"];
 
-  if(!introductionTexts) {
+  if (!introductionTexts) {
     return null;
   }
 
@@ -23,8 +23,16 @@ const Introduction = () => {
           <span className={style.name}>&nbsp;Luan Ribeiro</span>
         </h1>
 
-        <p className="text-2xl mt-8">{introductionTexts.Subtitle.toString()}</p>
-        <p className="text-2xl">{introductionTexts.Description.toString()}</p>
+        <div className="text-2xl mt-8">
+          {introductionTexts.Subtitle.map((subtitle) => (
+            <p key={subtitle}>{subtitle}</p>
+          ))}
+        </div>
+        <div className="text-1xl">
+          {introductionTexts.Description.map((text) => (
+            <p key={text}>{text}</p>
+          ))}
+        </div>
       </div>
     </section>
   );

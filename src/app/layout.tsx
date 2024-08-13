@@ -6,6 +6,7 @@ import { PageProvider } from "./context/PageContext";
 import { cookies } from "next/headers";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { defaultMessage } from "./components/Header/languages/defaultMessage";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,7 +24,7 @@ export default function RootLayout({
   
   const cookieStore = cookies();
   const lang = cookieStore.get("lang")?.value ?? "pt-br";
-  const messages = cookieStore.get("messages")?.value ? JSON.parse(cookieStore.get("messages")?.value ?? "") : {};
+  const messages = cookieStore.get("messages")?.value ? JSON.parse(cookieStore.get("messages")?.value ?? "") : defaultMessage;
 
   return (
     <html lang="pt-br">

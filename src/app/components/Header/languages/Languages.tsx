@@ -5,8 +5,8 @@ import style from "./languages.module.scss";
 import { useContext } from "react";
 import { setCookie } from "cookies-next";
 import { PageContext } from "@/app/context/PageContext";
-import getMessages from "@/app/utils/getMessages";
 import { pageLanguages } from "./pageLanguages";
+import getMessages from "@/app/utils/getMessages";
 
 const Languages = () => {
   const { info, setInfo } = useContext(PageContext);
@@ -34,9 +34,10 @@ const Languages = () => {
           >
             <Image
               src={language.urlImage}
-              alt={language.label}
+              alt={`${language.label}-flag`}
               width={30}
               height={30}
+              loading="eager"
             />
           </button>
         ))}

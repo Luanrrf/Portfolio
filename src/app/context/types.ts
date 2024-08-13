@@ -5,13 +5,11 @@ export interface ContextInsideProps {
 
 export interface ContextMessages {
   [key: string]: {
-    [key: string]: {
-      [key: string]: string | string[];
-    };
-  }
+    [key: string]: string[];
+  };
 }
 
 export interface ContextProps {
-    info: ContextInsideProps;
-    setInfo: (info: ContextInsideProps) => void;
+  info: ContextInsideProps;
+  setInfo: (info: ContextInsideProps) => void;
 }

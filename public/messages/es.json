@@ -1,15 +1,15 @@
 {
     "Introduction": {
       "Title": ["Hola,", "Yo soy"],
-      "Subtitle": "Desarrollador Full Stack",
-      "Description": "Colocar texto aquí"
+      "Subtitle": ["Desarrollador Full Stack"],
+      "Description": ["Colocar texto aquí"]
     },
     "AboutMe": {
-      "Title": "Sobre Mi",
-      "Description": "Colocar texto aquí"
+      "Title": ["Sobre Mi"],
+      "Description": ["Colocar texto aquí"]
     },
     "Projects": {
-      "Title": "Proyectos",
-      "Description": "Colocar texto aquí"
+      "Title": ["Proyectos"],
+      "Description": ["Colocar texto aquí"]
     }
 }
