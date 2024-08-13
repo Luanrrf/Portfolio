@@ -22,6 +22,7 @@ const ThemeButton = () => {
         className={`${isDarkTheme ? style.dark : style.light} ${
           style.themeButton
         }`}
+        aria-label="Theme Button"
       >
         <DarkThemeSVG color={"#fff"} width={"20px"} height={"20px"} />
         <LightThemeSVG color={"#000"} width={"20px"} height={"20px"} />
