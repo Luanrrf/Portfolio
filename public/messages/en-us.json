@@ -1,8 +1,11 @@
 {
   "Introduction": {
-    "Title": ["Hello,", "I'm"],
+    "Title": ["Hello,", "I Am"],
     "Subtitle": ["Full Stack Developer"],
-    "Description": ["Put text here"]
+    "Description": [
+      "Firstly, welcome to my personal portfolio. I am a developer always in search of new challenges and learning opportunities. I have experience with various technologies and programming languages, such as React, Next, Node, SCSS, TypeScript, and GraphQL.",
+      "As hobbies, I enjoy playing games🎮, watching movies and series🎬, reading books📖, and playing guitar🎸."
+    ]
   },
   "AboutMe": {
     "Title": ["About Me"],

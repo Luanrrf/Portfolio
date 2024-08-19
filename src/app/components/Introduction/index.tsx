@@ -16,14 +16,17 @@ const Introduction = () => {
   return (
     <section className={`${style.introduction} Screen`} id="Introduction">
       <div className={style.introductionTexts}>
-        <h1 className="text-6xl leading-tight">
+        <h2 className="text-6xl leading-tight">
           {introductionTexts?.["Title"][0]}
-          <br />
-          {introductionTexts?.["Title"][1]}
-          <span className={style.name}>&nbsp;Luan Ribeiro</span>
+        </h2>
+        <h1 className="text-6xl leading-tight">
+          {introductionTexts?.["Title"][1]}&nbsp;
+          <span className={`${style.name} ${style.typeWriter}`} id="typewriter">
+            Luan Ribeiro
+          </span>
         </h1>
 
-        <div className="text-2xl mt-8">
+        <div className="text-2xl mt-4">
           {introductionTexts.Subtitle.map((subtitle) => (
             <p key={subtitle}>{subtitle}</p>
           ))}

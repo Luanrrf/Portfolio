@@ -1,15 +1,18 @@
 {
-    "Introduction": {
-      "Title": ["Hola,", "Yo soy"],
-      "Subtitle": ["Desarrollador Full Stack"],
-      "Description": ["Colocar texto aquí"]
-    },
-    "AboutMe": {
-      "Title": ["Sobre Mi"],
-      "Description": ["Colocar texto aquí"]
-    },
-    "Projects": {
-      "Title": ["Proyectos"],
-      "Description": ["Colocar texto aquí"]
-    }
+  "Introduction": {
+    "Title": ["Hola,", "Yo Soy"],
+    "Subtitle": ["Desarrollador Full Stack"],
+    "Description": [
+      "Primero que nada, bienvenido a mi portafolio personal. Soy un desarrollador siempre en busca de nuevos desafíos y oportunidades de aprendizaje. Tengo experiencia con diversas tecnologías y lenguajes de programación, como React, Next, Node, SCSS, TypeScript y GraphQL.",
+      "Como pasatiempos, me gusta jugar🎮, ver películas y series🎬, leer libros📖 y tocar la guitarra🎸."
+    ]
+  },
+  "AboutMe": {
+    "Title": ["Sobre Mi"],
+    "Description": ["Colocar texto aquí"]
+  },
+  "Projects": {
+    "Title": ["Proyectos"],
+    "Description": ["Colocar texto aquí"]
+  }
 }

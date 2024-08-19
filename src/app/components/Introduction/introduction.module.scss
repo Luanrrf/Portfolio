@@ -1,5 +1,48 @@
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--color-font-stacks-tech);
+        filter: brightness(0.9);
+    }
+}
+
 .introduction {
-    .name {
-        color: red;
+
+    .introductionTexts {
+        h1 {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+        }
+
+        .name {
+            color: var(--color-font-stacks-tech);
+            filter: brightness(0.9);
+        }
+    
+        .typeWriter {
+            display: flex;
+            font-family: monospace;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 0.15em solid var(--color-font-stacks-tech);
+            filter: brightness(0.9);
+            animation: typing 4s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+            max-width: fit-content;
+        }
     }
 }
