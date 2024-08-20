@@ -10,3 +10,17 @@
         padding: 20vh 8rem;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .mainSection {
+        padding: 120px 3rem 120px 3rem;
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mainSection {
+        padding: 120px 30px 120px 30px;
+        gap: 60px;
+    }
+}
