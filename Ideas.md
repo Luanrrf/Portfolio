@@ -1,5 +1,4 @@
 Telas:
-1 - Tela principal com informações mais resumidas e aparecer nome escrito devagar [se possível com som de máquina de escrever enquanto isso acontece]
 2 - Sobre mim: Contar resuminho da vida / hobbies
 3 - Tab layout com linha do tempo com projetos, trabalhos, trabalhos de faculdade e cursos https://brittanychiang.com/#about
 3.1 - Filtros dentro do tab layout para separar as tecnologias
@@ -8,6 +7,7 @@ Telas:
 
 Carregamento bonitin
 Popup de linguagens
+Trocar cores LIGHT MODE
 
 
 Lista de lojas que já trabalhei:
@@ -39,21 +39,18 @@ Copservir
 Prismamoda
 
 
-Header
-Escolher melhor as cores do lightmode
-
-
 Extras:
 Paralax
 Background Interativo
 Mouse interativo
+Botar mouse diferente no site. Ex: https://www.onyedika.xyz/work
 Tela 5 - Formulário de enviar email com contato comigo
 Tela 3 - Adicionar quickview para os projetos com imagem, vídeo ou gif
-Botar mouse diferente no site. Ex: https://www.onyedika.xyz/work
 Mandar IA criar um molde meu animado
-Colocar animação em 3D
+Colocar animação em 3D / meu avatar
 Estilizar barra de rolagem
 Tela 6 - Formação acadêmica e cursos
+Som de máquina de escrever enquanto escreve meu nome
 
 
 Feitos:
@@ -62,3 +59,4 @@ Rolagem smooth
 Selecionar cores a serem utilizadas
 Dark e light mode (next-themes)
 Idiomas diferentes https://nextjs.org/docs/app/building-your-application/routing/internationalization
+1 - Tela principal com informações mais resumidas e aparecer nome escrito devagar

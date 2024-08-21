@@ -1,7 +1,9 @@
+import style from "./footer.module.scss";
+
 const Footer = () => {
   return (
-    <footer>
-      Insert my contact, all technologies and resume quickview (Drive)
+    <footer className={style.footer}>
+      Colocar contato, copywrigth, ícone das techs que conheço e currículo pra baixar automaticamente      
     </footer>
   );
 };
